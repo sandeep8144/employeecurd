@@ -48,5 +48,10 @@ public class EmployeeController {
         empService.deleteEmployee(id);
         return "Employee deleted";
     }
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+	    return "Welcome to Employee Management System API!";
+	}
 
 }
